@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<launch>
+    
+    <param name="use_sim_time" value="true" />
+
+    <rosparam file="$(find local_sensor_intergration)/cfg/params.yaml" command="load"></rosparam>
+    <param name="world_link" value="base_link" />
+    <param name="base_link" value="base_link" />
+    <param name="min_size" value="6" />
+    <param name="his_length" value="4" />
+    
+    <node pkg="local_sensor_intergration" type="localinfointergration" name="local_info_node" output="log" />
+
+    <node pkg="local_sensor_intergration" type="open_lslidar" name="open_lslidar" output="log" />
+
+</launch>

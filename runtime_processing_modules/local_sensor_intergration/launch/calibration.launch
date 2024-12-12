@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="local_sensor_intergration" type="MultiLidarCalib" name="MultiLidarCalib" output="screen"/>
+
+    <node pkg="rviz" type="rviz" name="rviz"
+        args="-d $(find local_sensor_intergration)/launch/calibration.rviz" />
+
+</launch>

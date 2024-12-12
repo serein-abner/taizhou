@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<launch>
+
+    <param name="use_sim_time" value="true" />
+
+    <!-- <machine name="nx" address="192.168.1.201" user="huck_nx" password="ros"
+        env-loader="/home/huck_nx/setup.bash">
+    </machine> -->
+
+    <rosparam file="$(find local_sensor_intergration)/cfg/params.yaml" command="load"></rosparam>
+    <param name="world_link" value="map" />
+    <param name="base_link" value="base_link" />
+    <param name="min_size" value="6" />
+    <param name="his_length" value="2" />
+
+    <!-- <node pkg="local_sensor_intergration" type="localinfointergration" name="local_info_node"
+        output="screen" /> -->
+
+    <node pkg="local_sensor_intergration" type="open_lslidar" name="open_lslidar">
+        <param name="interations" value="20" />
+        <param name="rigidness" value="1.5" />
+        <param name="time_step" value="0.45" />
+        <param name="voxel_reso" value="0.5" />
+    </node>
+
+</launch>

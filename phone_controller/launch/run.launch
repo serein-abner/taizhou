@@ -1,0 +1,20 @@
+<!-- -->
+<launch>
+    <node pkg="phone_controller" name="order_location" type="order_location" output="screen" launch-prefix="gnome-terminal -e">
+    </node>
+
+    <node pkg="phone_controller" name="order_navication" type="order_navication" output="screen" launch-prefix="gnome-terminal -e">
+    </node>
+
+    <node pkg="phone_controller" name="order_cruise" type="order_cruise" output="screen" launch-prefix="gnome-terminal -e">
+    </node>
+
+    <node pkg="phone_controller" name="order_pause_cruise" type="order_pause_cruise" output="screen" launch-prefix="gnome-terminal -e">
+    </node>
+
+    <node pkg="phone_controller" name="order_gohome" type="order_gohome" output="screen" launch-prefix="gnome-terminal -e">
+    </node>
+
+    <node pkg="phone_controller" name="order_stop" type="order_stop" output="screen" launch-prefix="gnome-terminal -e">
+    </node>
+</launch>

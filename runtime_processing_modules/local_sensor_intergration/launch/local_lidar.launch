@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+    <param name="use_sim_time" value="true" />
+
+    <rosparam file="$(find local_sensor_intergration)/cfg/params.yaml" command="load"></rosparam>
+    <param name="world_link" value="livox_frame" />
+    <param name="base_link" value="base_link" />
+    
+    <node pkg="local_sensor_intergration" type="locallidarfuse" name="locallidarfuse"
+        output="screen" />
+
+</launch>

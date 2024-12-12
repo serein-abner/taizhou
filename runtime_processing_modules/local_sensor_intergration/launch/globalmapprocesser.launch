@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+    <param name="global_map_name" value="/home/hwkan/catkin_folder/catkin_UgvPlanner/rs_map.pcd" />
+    <param name="global_map_savename" value="/home/hwkan/catkin_folder/catkin_UgvPlanner/rs_processed_map.pcd" />
+
+    <node pkg="local_sensor_intergration" type="globalmapprocess" name="globalmapprocess" output="screen"/>
+
+</launch>

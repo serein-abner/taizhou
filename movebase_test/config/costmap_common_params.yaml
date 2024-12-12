@@ -1,0 +1,7 @@
+robot_radius: 0.001
+inflation_radius: 0.05
+transform_tolerance: 1.0
+
+max_obstacle_height: 5
+min_obstacle_height: -5
+

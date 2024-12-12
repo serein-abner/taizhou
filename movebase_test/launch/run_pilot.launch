@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<launch>
+
+    <node pkg="movebase_test" type="auto_pilot" name="auto_pilot" output="screen">
+        <param name="path_file" value="$(find movebase_test)/cruiser_path_config/path.yaml" />
+    </node>
+
+</launch>

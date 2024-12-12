@@ -1,0 +1,25 @@
+global_costmap:
+  global_frame: map
+  robot_base_frame: base_link
+
+  update_frequency: 1.0
+  publish_frequency: 1.0
+
+  obstacle_range: 5.0
+  raytrace_range: 5.0
+  
+  # observation_sources: scan
+  # scan/data_type: PointCloud2
+  # scan/sensor_frame: livox_frame
+  # scan/topic: /obstacles 
+  # scan/marking: true 
+  # scan/clearing: true
+
+  static_map: true
+  # rolling_window: true
+  # resolution: 0.25
+  
+  width: 200.0
+  height: 200.0
+  origin_x: -50
+  origin_y: -50

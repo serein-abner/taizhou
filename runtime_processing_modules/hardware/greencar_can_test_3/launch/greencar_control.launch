@@ -1,0 +1,4 @@
+<launch>
+    <!-- <node pkg="greencar_can_test_3" type="greencar_control_pub" name="greencar_control_pub" output="screen" /> -->
+    <node pkg="greencar_can_test_3" type="greencar_control_sub" respawn="true" name="greencar_control_sub" output="screen" />
+</launch>

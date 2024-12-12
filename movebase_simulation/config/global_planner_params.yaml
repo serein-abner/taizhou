@@ -1,0 +1,4 @@
+GlobalPlanner:
+  #use_quadratic: true
+  use_dijkstra: true
+  orientation_mode: 3

@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+
+    <!--imu-->
+    <!-- <include file="$(find imu_launch)/launch/imu_msg.launch" /> -->
+    
+    <!--WLR_720-->
+    <include file="$(find vanjee_lidar)/launch/vanjee.launch" />
+    
+    <include file="$(find imu_launch)/launch/imu_msg.launch" />
+
+    <node pkg="greencar_can_test_3" type="greencar_control_sub" respawn="true" name="greencar_control_sub" output="screen" />
+
+    <!-- <arg name="rosbag" default="1" />
+    <group if="$(arg rosbag)">
+        <node pkg="rosbag" type="record" name="rosbag_record"
+            args="record -o /home/makabaka/HZAU_rosbag/ /IMU_data /wanji_point " />
+    </group> -->
+
+</launch>

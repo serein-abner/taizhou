@@ -1,0 +1,5 @@
+<?xml version="1.0"?>
+<launch>
+    <node pkg="movebase_test" type="returnhome" name="returnhome">
+    </node>
+</launch>

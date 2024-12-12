@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+
+    <param name="/registered_point_topic" value="/lio_sam/mapping/cloud_registered" />
+    <param name="/save_map_name" value="/home/hwkan/catkin_folder/catkin_UgvPlanner/rs_map.pcd" />
+    
+    <node pkg="local_sensor_intergration" type="globalmapgeneration" name="gloabl_map_saver" output="screen"/>
+
+</launch>

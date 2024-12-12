@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<launch>
+    <!--livox driver-->
+    <include file="$(find livox_ros_driver)/launch/livox_lidar.launch">
+        <arg name="xfer_format" default="1" />
+    </include>
+    <!--realsense2
+    camera-->
+    <!-- <include file="$(find realsense2_camera)/launch/rs_camera.launch"/> -->
+    <!--imu-->
+    <include file="$(find imu_launch)/launch/imu_msg.launch" />
+    <!--robosense
+    lidar-->
+    <include file="$(find rslidar_sdk)/launch/start.launch" />
+    <!--hunter
+    control node-->
+    <include file="$(find hunter_bringup)/launch/hunter_robot_base.launch" />
+
+</launch>
